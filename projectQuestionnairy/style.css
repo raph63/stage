@@ -50,6 +50,13 @@ section,
 summary {
   display: block; }
 
+footer {
+  display: flex;
+}  
+#score {
+  margin-left: 70%;
+}
+
 audio,
 canvas,
 progress,
@@ -389,7 +396,8 @@ h2, .headline-secondary, .headline-secondary--grouped {
   letter-spacing: 1px;
   font-weight: 300;
   font-size: 1.5em;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: underline; }
 
 .form__btn, [class^="btn--"] {
   padding: 10px 20px;
