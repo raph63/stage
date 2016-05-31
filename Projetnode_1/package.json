@@ -1,0 +1,39 @@
+{
+  "name": "woof",
+  "version": "1.0.0",
+  "description": "cat dog",
+  "main": "index.js",
+  "author": "Connor Brathwaite <connor@volume7.io>",
+  "license": "MIT",
+  "scripts": {
+    "start": "NODE_ENV=production node index.js",
+    "dev": "NODE_ENV=development ./node_modules/.bin/nodemon index.js",
+    "test": "NODE_ENV=test ./node_modules/.bin/mocha --compilers js:babel-register --require babel-polyfill --reporter mocha-circleci-reporter test/*.js",
+    "lint": "eslint src/**/*.js"
+  },
+  "babel": {
+    "presets": [
+      "es2015-node5",
+      "stage-0"
+    ]
+  },
+  "dependencies": {
+    "babel-core": "^6.8.0",
+    "babel-polyfill": "^6.8.0",
+    "babel-preset-es2015-node5": "^1.2.0",
+    "babel-preset-stage-0": "^6.5.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.8.0",
+    "babel-eslint": "^6.0.4",
+    "babel-register": "^6.8.0",
+    "chai": "^3.5.0",
+    "eslint": "^2.10.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-react": "^5.1.1",
+    "mocha": "^2.4.5",
+    "mocha-circleci-reporter": "0.0.1",
+    "nodemon": "^1.9.2",
+    "supertest": "^1.2.0"
+  }
+}
