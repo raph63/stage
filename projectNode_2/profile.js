@@ -8,7 +8,7 @@ var util = require("util");
  * @param username
  * @constructor
  */
-function Profile(username) {
+export default function Profile(username) {
 
     EventEmitter.call(this);
 
@@ -48,4 +48,4 @@ function Profile(username) {
 
 util.inherits( Profile, EventEmitter );
 
-module.exports = Profile;
+// module.exports = Profile;
